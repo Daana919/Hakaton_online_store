@@ -3,8 +3,9 @@ import {
   calcSubPrice,
   calcTotalPrice,
   getCountProductsInCart,
-} from "../helpers/functions";
-import { CART } from "../helpers/consts";
+} from '../helpers/function'
+// import { CART } from "../../helpers/consts";
+import {CART} from '../helpers/consts'
 
 const cartContext = createContext();
 export const useCart = () => {
