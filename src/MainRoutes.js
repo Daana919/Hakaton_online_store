@@ -6,7 +6,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import HomePage from "./pages/HomePage";
 import AdminPage from "./pages/AdminPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
-import EditProductPage from "./pages/EditProductPage";
+import EditPage from "./pages/EditPage";
 import ProductsPage from "./pages/ProductsPage";
 import CartPage from "./pages/CartPage";
 import FormOrderPage from "./pages/FormOrderPage";
@@ -50,7 +50,7 @@ const MainRoutes = () => {
 		},
 		{
 			link: "/edit/:id",
-			element: <EditProductPage />,
+			element: <EditPage />,
 			id: 8,
 		},
 		{
