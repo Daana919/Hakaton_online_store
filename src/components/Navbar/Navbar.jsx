@@ -82,6 +82,7 @@ function ResponsiveAppBar() {
 		}
 	}, []);
 
+
 	return (
 		<ThemeProvider theme={darkTheme}>
 			<AppBar position='static' sx={{ background: "#242424" }}>
@@ -225,5 +226,6 @@ function ResponsiveAppBar() {
 			</AppBar>
 		</ThemeProvider>
 	);
+
 }
 export default ResponsiveAppBar;

@@ -50,6 +50,7 @@ const ProductCard = ({ item }) => {
 					Delete
 				</Button>
 
+
 				<IconButton size='small' onClick={() => addProductToCart(item)}>
 					<AddShoppingCartOutlinedIcon color={checkProductInCart(item.id) ? "primary" : ""} />
 				</IconButton>
