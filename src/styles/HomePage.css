@@ -1,0 +1,309 @@
+/* .header_top {
+	width: 100%;
+	height: 100vh;
+	color: white;
+	/* background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-high-end-waterproof-mechanical-watch-background-image_186168.jpg);
+	background-repeat: no-repeat; */
+/* background-color: #242424; */
+/* } */
+
+.header_top {
+	background: rgb(33, 29, 20);
+}
+
+.header_top_content {
+	display: flex;
+	margin-left: 100px;
+	flex-direction: column;
+}
+.header_top_content_title {
+	font-size: 38px;
+	color: white;
+}
+
+.header_top_par1 {
+	font-size: 12px;
+	color: grey;
+}
+
+.header_top_par2 {
+	color: grey;
+}
+
+.header_price {
+	color: #a8741a;
+	font-size: 25px;
+}
+
+.header_top_btn {
+	width: 12%;
+	height: 35px;
+	color: #a8741a;
+	/* background-color: #242424; */
+	border: 3px solid #a8741a;
+}
+.header_top_btn :hover {
+	background-color: #a8741a;
+}
+
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+}
+
+.btn_div {
+	background-image: linear-gradient(to right bottom, #fff, #f4edfc);
+	box-sizing: border-box;
+	/* height: 200vh; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.btn {
+	border-radius: 4px;
+	text-transform: uppercase;
+	position: relative;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1.5px solid black;
+	padding: 1rem 2rem;
+	font-size: 3rem;
+	background-size: 300%;
+	transition: all 0.6s;
+}
+
+.orange {
+	color: #a8741a;
+	background-image: linear-gradient(120deg, white 50%, #a8741a 50%);
+	height: 10px;
+	width: 45px;
+	font-size: 10px;
+}
+
+.btn:hover {
+	color: #fff;
+	background-position: 100%;
+	transform: translateX(0.5rem);
+}
+
+.btn:active {
+	transform: translate(0.5rem, 0.5rem);
+	box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
+}
+
+.content .img-box img {
+	margin-top: 130px;
+	width: 100%;
+}
+
+section {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 20px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo {
+	position: relative;
+	max-width: 100px;
+	padding-left: 30px;
+}
+header ul {
+	position: relative;
+	display: flex;
+}
+header ul li {
+	list-style: none;
+}
+header ul li a {
+	display: inline-block;
+	margin-right: 40px;
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #ffff;
+	font-family: verdana;
+}
+header ul li a:hover {
+	color: #badc58;
+}
+.content {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content .text {
+	position: relative;
+	width: 50%;
+	padding-left: 30px;
+}
+.content .text h1 {
+	font-size: 3em;
+	color: #fff;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.content .text h1 span {
+	font-size: 1.7em;
+	color: #badc58;
+}
+.content .text p {
+	color: #fff;
+	line-height: 1.2em;
+	font-family: sans-serif;
+}
+.content .text a {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 20px;
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	text-transform: capitalize;
+	color: #fff;
+	font-weight: bold;
+	transition: 0.4s;
+}
+.content .text:hover a {
+	background: #badc58;
+}
+.content .img-box {
+	width: 40%;
+	display: flex;
+	justify-content: flex-end;
+	/* margin-top: 50px; */
+	padding-right: 10px;
+}
+.content .img-box img {
+	margin-top: 130px;
+	width: 100%;
+}
+.thumb {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 100px;
+	display: flex;
+}
+.thumb li {
+	display: inline-block;
+	list-style: none;
+	margin: 5px 30px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.thumb li:hover {
+	transform: translateY(-20px);
+}
+.thumb li img {
+	width: 100px;
+}
+
+/*add media queries*/
+
+section {
+	padding-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+	header ul {
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background: #fff;
+		z-index: 1;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+header ul li a {
+	color: #000;
+	margin: 10px;
+	font-size: 3rem;
+	padding: 10px;
+	transition: 0.5s;
+}
+header ul li a:hover {
+	color: #badc58;
+}
+header ul.active {
+	visibility: visible;
+	opacity: 1;
+}
+.toggle {
+	background: url("https://i.postimg.cc/ZngHDHRB/iconfinder-menu-alt-134216.png") no-repeat;
+	background-size: 40px;
+	width: 40px;
+	height: 40px;
+	filter: invert(1);
+	margin-right: 70px;
+	cursor: pointer;
+	z-index: 2;
+}
+.toggle.active {
+	background: url("https://i.postimg.cc/4NDw6Wqj/Pngtree-icon-close-button-4401093.jpg") no-repeat;
+	background-position: center;
+	background-size: 40px;
+	filter: invert(0);
+}
+.content {
+	flex-direction: column;
+	margin-top: 50px;
+	padding: 10px 20px;
+}
+.content .text {
+	position: relative;
+	width: 100%;
+}
+.content .text h1 {
+	font-size: 2.4em;
+}
+.content .text p {
+	font-size: 15px;
+}
+.content .text a {
+	padding: 5px 10px;
+	font-size: 12px;
+}
+.content .img-box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content .img-box img {
+	width: 300px;
+}
+.thumb {
+	margin-bottom: 300px;
+}
+.thumb li img {
+	width: 40px;
+}

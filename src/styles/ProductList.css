@@ -1,0 +1,15 @@
+.product-list {
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 5% 0;
+	background: #242424;
+}
+
+.title_product_list {
+	display: flex;
+	justify-content: center;
+	margin-top: 8%;
+}
