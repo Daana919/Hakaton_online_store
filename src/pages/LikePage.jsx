@@ -4,7 +4,9 @@ import Like from "../components/Like/Like";
 const LikePage = () => {
 	return (
 		<div>
-			<h3>Like Page</h3>
+			<div className='saved'>
+				<p style={{ display: "flex", justifyContent: "center", fontSize: "30px" }}>Saved items</p>
+			</div>
 			<Like />
 		</div>
 	);

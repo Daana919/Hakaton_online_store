@@ -13,6 +13,7 @@ import { useLike } from "../../../contexts/LikeContextProvider";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import IconButton from "@mui/material/IconButton";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 const ProductCard = ({ item }) => {
 	const navigate = useNavigate();
@@ -49,7 +50,6 @@ const ProductCard = ({ item }) => {
 				<Button size='small' onClick={() => deleteProduct(item.id)}>
 					Delete
 				</Button>
-
 
 				<IconButton size='small' onClick={() => addProductToCart(item)}>
 					<AddShoppingCartOutlinedIcon color={checkProductInCart(item.id) ? "primary" : ""} />

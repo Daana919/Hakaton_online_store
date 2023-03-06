@@ -1,0 +1,9 @@
+.items {
+	display: flex;
+	justify-content: center;
+}
+
+.like_list {
+	display: flex;
+	flex-direction: row;
+}

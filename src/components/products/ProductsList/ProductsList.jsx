@@ -26,16 +26,6 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
 	}
 
 	return (
-		// <div>
-		// 	<h3 className='title_product_list'>Which product is right for you?</h3>
-		// 	<button style={{ marginLeft: "26px", marginBottom: "28px" }} onClick={changeSideBarStatus}>
-		// 		Filter&Search Menu
-		// 	</button>
-		// 	<div className='product-list'>
-		// 		{products ? currentData().map(item => <ProductCard key={item.id} item={item} />) : <h3>Loading...</h3>}
-		// 		<Pagination count={count} page={page} onChange={handlePage} />
-		// 	</div>
-		// </div>
 		<div style={{ background: "#242424" }}>
 			<h3 className='title_product_list'>Which product is right for you?</h3>
 			<button style={{ marginLeft: "26px", marginBottom: "28px" }} onClick={changeSideBarStatus}>
