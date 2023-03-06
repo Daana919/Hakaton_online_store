@@ -13,6 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import { orange } from "@mui/material/colors";
 
 // custom
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -43,11 +44,18 @@ const settings = [
 	},
 ];
 
-const darkTheme = createTheme({
+// const darkTheme = createTheme({
+// 	palette: {
+// 		mode: "dark",
+// 		primary: {
+// 			main: "#1976d2",
+// 		},
+// 	},
+// });
+const theme = createTheme({
 	palette: {
-		mode: "dark",
 		primary: {
-			main: "#1976d2",
+			main: orange[50],
 		},
 	},
 });
@@ -82,10 +90,9 @@ function ResponsiveAppBar() {
 		}
 	}, []);
 
-
 	return (
-		<ThemeProvider theme={darkTheme}>
-			<AppBar position='static' sx={{ background: "#242424" }}>
+		<ThemeProvider theme={theme}>
+			<AppBar position='static' style={{ background: "transparent", boxShadow: "none" }}>
 				<Container maxWidth='xl'>
 					<Toolbar disableGutters>
 						{/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
@@ -99,13 +106,14 @@ function ResponsiveAppBar() {
 								fontFamily: "monospace",
 								fontWeight: 700,
 								letterSpacing: ".3rem",
-								color: "inherit",
+								color: "#a8741a",
 								textDecoration: "none",
 								cursor: "pointer",
+								fontFamily: "Chakra Petch",
 							}}
 							onClick={() => navigate("/")}
 						>
-							Home
+							Timesculp
 						</Typography>
 
 						<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -154,9 +162,10 @@ function ResponsiveAppBar() {
 								letterSpacing: ".3rem",
 								color: "inherit",
 								textDecoration: "none",
+								fontFamily: "Chakra Petch",
 							}}
 						>
-							Home
+							Timesculp
 						</Typography>
 						<Box
 							sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
@@ -168,7 +177,7 @@ function ResponsiveAppBar() {
 									onClick={() => {
 										navigate(page.path);
 									}}
-									sx={{ my: 2, color: "#a8741a", display: "block" }}
+									sx={{ my: 2, display: "block", fontFamily: "Chakra Petch", color: "black" }}
 								>
 									{page.type}
 								</Button>
@@ -209,13 +218,13 @@ function ResponsiveAppBar() {
 							>
 								{settings.map(setting => (
 									<MenuItem key={setting.type} onClick={handleCloseUserMenu}>
-										<Typography textAlign='center' onClick={() => navigate(setting.path)}>
+										<Typography textAlign='center' onClick={() => navigate(setting.path)} sx={{ fontFamily: "Chakra Petch" }}>
 											{setting.type}
 										</Typography>
 									</MenuItem>
 								))}
 								<MenuItem onClick={handleCloseUserMenu}>
-									<Typography textAlign='center' onClick={logout}>
+									<Typography textAlign='center' onClick={logout} sx={{ fontFamily: "Chakra Petch" }}>
 										Logout
 									</Typography>
 								</MenuItem>
@@ -226,6 +235,5 @@ function ResponsiveAppBar() {
 			</AppBar>
 		</ThemeProvider>
 	);
-
 }
 export default ResponsiveAppBar;

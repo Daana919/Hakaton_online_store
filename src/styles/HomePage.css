@@ -1,45 +1,52 @@
-/* .header_top {
-	width: 100%;
-	height: 100vh;
-	color: white;
-	/* background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-high-end-waterproof-mechanical-watch-background-image_186168.jpg);
-	background-repeat: no-repeat; */
-/* background-color: #242424; */
-/* } */
-
 .header_top {
-	background: rgb(33, 29, 20);
+	/* background-image: url(https://images.zenith-watches.com/website-zenith-pre-prod/5a4ff4db-b0c5-41e4-970e-969676deea13_DEFY+Skyline+Boutique+Edition+v4.png?im=Resize=1500); */
+	/* background-image: url(https://www.grand-seiko.com/global-en/-/media/Images/GlobalEn/GrandSeiko/Home/top/mainvisual/SBGW295/SBGW295_KV_PC.jpg?mh=1000&mw=1500&hash=48D73940F09A6506539E9A99930BF05F); */
+	background: white;
+	background-repeat: no-repeat;
+	display: flex;
 }
 
 .header_top_content {
 	display: flex;
 	margin-left: 100px;
 	flex-direction: column;
+	width: 30%;
 }
 .header_top_content_title {
 	font-size: 38px;
 	color: white;
+	text-transform: uppercase;
+	color: transparent;
+	letter-spacing: 5px;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+	background-clip: text;
 }
 
 .header_top_par1 {
 	font-size: 12px;
-	color: grey;
+	color: rgb(0, 0, 0);
 }
 
 .header_top_par2 {
-	color: grey;
+	color: rgb(0, 0, 0);
 }
 
 .header_price {
-	color: #a8741a;
+	color: white;
+	text-transform: uppercase;
+	color: transparent;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+	background-clip: text;
 	font-size: 25px;
+	margin-left: 10px;
 }
 
 .header_top_btn {
 	width: 12%;
 	height: 35px;
 	color: #a8741a;
-	/* background-color: #242424; */
 	border: 3px solid #a8741a;
 }
 .header_top_btn :hover {
@@ -95,116 +102,20 @@
 	transform: translate(0.5rem, 0.5rem);
 	box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
 }
+/* watches */
 
-.content .img-box img {
-	margin-top: 130px;
-	width: 100%;
-}
-
-section {
-	position: relative;
-	width: 100vw;
-	height: 100vh;
+.thumb_section {
+	/* position: relative; */
+	/* width: 100vw;
+	height: 20vh; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #000;
+	background: white;
+	flex-direction: column;
+	width: 65%;
 }
-header {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	padding: 20px 10px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-header .logo {
-	position: relative;
-	max-width: 100px;
-	padding-left: 30px;
-}
-header ul {
-	position: relative;
-	display: flex;
-}
-header ul li {
-	list-style: none;
-}
-header ul li a {
-	display: inline-block;
-	margin-right: 40px;
-	text-decoration: none;
-	font-size: 1.2em;
-	color: #ffff;
-	font-family: verdana;
-}
-header ul li a:hover {
-	color: #badc58;
-}
-.content {
-	position: relative;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.content .text {
-	position: relative;
-	width: 50%;
-	padding-left: 30px;
-}
-.content .text h1 {
-	font-size: 3em;
-	color: #fff;
-	line-height: 1.5em;
-	text-transform: uppercase;
-	font-weight: 900;
-}
-.content .text h1 span {
-	font-size: 1.7em;
-	color: #badc58;
-}
-.content .text p {
-	color: #fff;
-	line-height: 1.2em;
-	font-family: sans-serif;
-}
-.content .text a {
-	display: inline-block;
-	padding: 10px 20px;
-	margin-top: 20px;
-	text-decoration: none;
-	color: #fff;
-	border: 2px solid #fff;
-	border-radius: 20px;
-	text-transform: capitalize;
-	color: #fff;
-	font-weight: bold;
-	transition: 0.4s;
-}
-.content .text:hover a {
-	background: #badc58;
-}
-.content .img-box {
-	width: 40%;
-	display: flex;
-	justify-content: flex-end;
-	/* margin-top: 50px; */
-	padding-right: 10px;
-}
-.content .img-box img {
-	margin-top: 130px;
-	width: 100%;
-}
-.thumb {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 100px;
-	display: flex;
-}
+
 .thumb li {
 	display: inline-block;
 	list-style: none;
@@ -219,91 +130,106 @@ header ul li a:hover {
 	width: 100px;
 }
 
-/*add media queries*/
-
-section {
-	padding-bottom: 30px;
-}
-
-@media (max-width: 991px) {
-	header ul {
-		top: 0;
-		left: 0;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		background: #fff;
-		z-index: 1;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		visibility: hidden;
-		opacity: 0;
-	}
-}
-header ul li a {
-	color: #000;
-	margin: 10px;
-	font-size: 3rem;
-	padding: 10px;
-	transition: 0.5s;
-}
-header ul li a:hover {
-	color: #badc58;
-}
-header ul.active {
-	visibility: visible;
-	opacity: 1;
-}
-.toggle {
-	background: url("https://i.postimg.cc/ZngHDHRB/iconfinder-menu-alt-134216.png") no-repeat;
-	background-size: 40px;
+.thumb li img {
 	width: 40px;
-	height: 40px;
-	filter: invert(1);
-	margin-right: 70px;
-	cursor: pointer;
-	z-index: 2;
 }
-.toggle.active {
-	background: url("https://i.postimg.cc/4NDw6Wqj/Pngtree-icon-close-button-4401093.jpg") no-repeat;
-	background-position: center;
-	background-size: 40px;
-	filter: invert(0);
+
+.homepage {
+	background: rgb(255, 253, 253);
 }
-.content {
-	flex-direction: column;
-	margin-top: 50px;
-	padding: 10px 20px;
+
+.gold {
+	text-transform: uppercase;
+	color: transparent;
+	font-size: 34px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+	background-clip: text;
 }
-.content .text {
-	position: relative;
-	width: 100%;
+
+.collection_text {
+	color: rgb(4, 4, 4);
+	font-size: 30px;
+	margin-bottom: 70px;
 }
-.content .text h1 {
-	font-size: 2.4em;
-}
-.content .text p {
-	font-size: 15px;
-}
-.content .text a {
-	padding: 5px 10px;
-	font-size: 12px;
-}
-.content .img-box {
+
+.collection {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	margin-top: 120px;
+}
+.collection_content {
+	width: 75%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 }
-.content .img-box img {
-	width: 300px;
+
+.image_block {
+	display: flex;
+	width: 100%;
+	height: 20%;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
 }
-.thumb {
-	margin-bottom: 300px;
+.images {
+	width: 27%;
+	height: 10%;
+	border-radius: 5px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
-.thumb li img {
-	width: 40px;
+
+.images:hover {
+	/* transform: translateY(-20px); */
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.present {
+	margin: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.present_img {
+	width: 50%;
+	margin: 60px;
+}
+
+.present_content_btn {
+	width: 50%;
+	height: 40px;
+	font-size: 15px;
+	background-color: white;
+	border: #a8741a solid 1px;
+	color: #a8741a;
+}
+
+.present_content_btn:hover {
+	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+	color: black;
+}
+
+.location {
+	background-image: url(https://i.postimg.cc/zvMgtsdM/kisspng-omega-speedmaster-omega-seamaster-watch-coaxial-es-watches-5acdc390e168f2-449941241523434384.png);
+	width: 30%;
+	height: 30%;
+}
+
+.present_content_title {
+	text-transform: uppercase;
+	color: transparent;
+	font-size: 34px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+	background-clip: text;
 }
