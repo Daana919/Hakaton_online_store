@@ -4,7 +4,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+      /* display: grid;
+    grid-template-rows: 100vh;
+    overflow: hidden;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.5); */
 }
+
 
 .product-list {
   width: 95%;
