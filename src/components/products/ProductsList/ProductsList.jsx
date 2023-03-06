@@ -29,7 +29,24 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
 
   return (
     <div className="productList_container">
-      <h2>Our collections</h2>
+      <video
+        className="video-bg"
+        autoplay
+        muted
+        loop
+        preload
+        controls
+        style={{ width: "100%" }}
+      >
+        <source
+          src="https://content.rolex.com/dam/watches/family-pages/datejust/update/2021/cover/cover-family-page-datejust.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div className="video-overlay">
+        <h2>Our collections</h2>
+      </div>
+
       <div className="sidebar">
         <div className="sidebar_btns_left">
           <h5>All watches</h5>

@@ -20,6 +20,7 @@ const AddProduct = () => {
     strap: "",
     material: "",
     diameter: "",
+    water_resistance:""
   });
 
   const handleInp = (e) => {

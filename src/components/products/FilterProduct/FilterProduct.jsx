@@ -28,20 +28,13 @@ export default function RadioButtonsGroup() {
           >
             <FormControlLabel value="all" control={<Radio />} label="ALL" />
             <FormControlLabel
-              value="sport"
+              value="brand"
               control={<Radio />}
               label="BRANDS"
             />
-            <FormControlLabel
-              value="clothes"
-              control={<Radio />}
-              label="WOMEN"
-            />
-            <FormControlLabel
-              value="electronics"
-              control={<Radio />}
-              label="MEN"
-            />
+            <FormControlLabel value="women" control={<Radio />} label="WOMEN" />
+            <FormControlLabel value="men" control={<Radio />} label="MEN" />
+            <FormControlLabel value="unisex" control={<Radio />} label="Unisex" />
           </RadioGroup>
         </FormControl>
       </div>
