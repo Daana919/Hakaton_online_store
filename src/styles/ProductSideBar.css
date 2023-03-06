@@ -1,5 +1,21 @@
 .sideBar {
-  background: gray;
+  background: #eff1f3;
   width: 20%;
   height: 90vh;
+}
+.sidebar_container {
+  margin-top: 40%;
+}
+.sidebar_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+.sidebar_title h3 {
+  margin-left: 5px;
+  font-size: 24px;
+}
+.sidebar_content {
+    margin-left: 36px;
 }

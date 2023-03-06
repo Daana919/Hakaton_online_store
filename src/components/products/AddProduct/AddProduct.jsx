@@ -11,26 +11,35 @@ const AddProduct = () => {
     name: "",
     description: "",
     price: "",
-    picture: "",
-    type: "",
+    brand: "",
+    gender: "",
+    image: "",
+    hoverImage: "",
+    frequency: "",
+    function: "",
+    strap: "",
+    material: "",
+    diameter: "",
   });
 
   const handleInp = (e) => {
     if (e.target.name === "price") {
       let obj = {
         ...product,
-        price: Number(e.target.value),
+          price: Number(e.target.value),
       };
       setProduct(obj);
+      console.log(obj);
     } else {
       let obj = {
         ...product,
         [e.target.name]: e.target.value,
       };
-      setProduct(obj);
+      console.log(setProduct(obj));
     }
   };
 
+  // console.log(setProduct);
   return (
     <div>
       <h2>Add Product</h2>
@@ -56,13 +65,25 @@ const AddProduct = () => {
 
       <input
         type="text"
-        placeholder="Picture"
-        name="picture"
+        placeholder="image"
+        name="image"
+        onChange={handleInp}
+      />
+      <br />
+      <input
+        type="text"
+        placeholder="hoverImage"
+        name="hoverImage"
         onChange={handleInp}
       />
       <br />
 
-      <input type="text" placeholder="Type" name="type" onChange={handleInp} />
+      <input
+        type="text"
+        placeholder="Diameter"
+        name="diameter"
+        onChange={handleInp}
+      />
       <br />
 
       <button
