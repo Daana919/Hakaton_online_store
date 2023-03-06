@@ -13,12 +13,15 @@ const ProductsPage = () => {
 
   return (
     <div className="productsPage">
+      {/* <div className="content_products"> */}
       <ProductSideBar isSideBar={isSideBar} setPage={setPage} />
       <ProductsList
         changeSideBarStatus={changeSideBarStatus}
         page={page}
         setPage={setPage}
-      />
+      />        
+      {/* </div> */}
+
     </div>
   );
 };

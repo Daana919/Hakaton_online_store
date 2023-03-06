@@ -4,6 +4,7 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
+import TuneIcon from "@mui/icons-material/Tune";
 // custom
 import { useProducts } from "../../../contexts/ProductContextProvider";
 
@@ -11,23 +12,39 @@ export default function RadioButtonsGroup() {
   const { fetchByParams } = useProducts();
 
   return (
-    <FormControl>
-      <FormLabel id="demo-radio-buttons-group-label">Categories</FormLabel>
-      <RadioGroup
-        aria-labelledby="demo-radio-buttons-group-label"
-        defaultValue="all"
-        name="radio-buttons-group"
-        onChange={(e) => fetchByParams("type", e.target.value)}
-      >
-        <FormControlLabel value="all" control={<Radio />} label="All" />
-        <FormControlLabel value="sport" control={<Radio />} label="Sport" />
-        <FormControlLabel value="clothes" control={<Radio />} label="Clothes" />
-        <FormControlLabel
-          value="electronics"
-          control={<Radio />}
-          label="Electronics"
-        />
-      </RadioGroup>
-    </FormControl>
+    <div className="sidebar_container">
+      <div className="sidebar_title">
+        <TuneIcon />
+        <h3>Filters</h3>
+      </div>
+      <div className="sidebar_content">
+        <FormControl>
+          <FormLabel id="demo-radio-buttons-group-label">Categories</FormLabel>
+          <RadioGroup
+            aria-labelledby="demo-radio-buttons-group-label"
+            defaultValue="all"
+            name="radio-buttons-group"
+            onChange={(e) => fetchByParams("type", e.target.value)}
+          >
+            <FormControlLabel value="all" control={<Radio />} label="ALL" />
+            <FormControlLabel
+              value="sport"
+              control={<Radio />}
+              label="BRANDS"
+            />
+            <FormControlLabel
+              value="clothes"
+              control={<Radio />}
+              label="WOMEN"
+            />
+            <FormControlLabel
+              value="electronics"
+              control={<Radio />}
+              label="MEN"
+            />
+          </RadioGroup>
+        </FormControl>
+      </div>
+    </div>
   );
 }

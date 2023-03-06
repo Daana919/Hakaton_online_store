@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import FilterProduct from "../FilterProduct/FilterProduct";
+
 import "../../../styles/ProductSideBar.css";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import { useSearchParams } from "react-router-dom";
@@ -22,12 +23,12 @@ const ProductSideBar = ({ isSideBar, setPage }) => {
 
   return isSideBar ? (
     <div className="sideBar">
-      <input
+      {/* <input
         type="text"
         placeholder="Search..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-      />
+      /> */}
       <FilterProduct />
     </div>
   ) : null;

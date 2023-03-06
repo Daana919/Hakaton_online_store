@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const authContext = React.createContext();
 export const useAuth = () => useContext(authContext);
 
-const API = " http://localhost:8000/users";
+const API = "http://localhost:8000/users";
 
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState("");
@@ -18,12 +18,15 @@ const AuthContextProvider = ({ children }) => {
     try {
       const res = await axios(`${API}?username=${username}`);
       const users = res.data;
-      return users.length === 0;
+      console.log(users);
+      // return users.length === 0;
+      return users;
     } catch (e) {
       console.log(e);
       return false;
     }
   }
+  checkUniqueUsername();
   async function confirmPassword(username, password, confirmPass) {
     try {
       const res = await axios(`${API}?username=${username}`);
@@ -60,6 +63,10 @@ const AuthContextProvider = ({ children }) => {
     formData.append("confrimPass", confirmPass);
 
     let uniqueUsername = await checkUniqueUsername(formData.username);
+    // if(uniqueUsername) {
+    //   alert("Doesnt work");
+    //   return;
+    // }
     console.log(uniqueUsername);
 
     let passwordsMatch = await confirmPassword(
@@ -67,10 +74,10 @@ const AuthContextProvider = ({ children }) => {
       formData.password,
       formData.confirmPass
     );
-    // if (!passwordsMatch) {
-    //   alert("Passwords don't match");
-    //   return;
-    // }
+    if (!passwordsMatch) {
+      alert("Passwords don't match");
+      return;
+    }
     // if (formData.password !== formData.confirmPass) {
     //   alert("Passwords don't match");
     //   return;
@@ -83,10 +90,10 @@ const AuthContextProvider = ({ children }) => {
       navigate("/login");
     } catch (e) {
       console.log(e);
-      if (!passwordsMatch || uniqueUsername) {
-        setError("Username is already taken or passwords are don't match!");
-        // log
-      }return;
+      // if (!passwordsMatch || uniqueUsername) {
+      setError("Username is already taken or passwords are don't match!");
+      // log
+      // }return;
     }
   };
 
@@ -163,7 +170,5 @@ const AuthContextProvider = ({ children }) => {
     </authContext.Provider>
   );
 };
-
-
 
 export default AuthContextProvider;

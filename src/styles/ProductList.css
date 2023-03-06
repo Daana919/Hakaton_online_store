@@ -1,15 +1,61 @@
-.product-list {
-	width: 95%;
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 5% 0;
-	background: #242424;
+.productList_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.product-list {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5% 0;
+  /* background: #242424; */
+}
+.sidebar {
+  /* position: fixed; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #efefef;
+  height: 5%;
+  margin: 0 auto;
+  border-bottom: 1px solid #eff1f3;
+  line-height: 64px;
+  font-family: "Chakra Petch", sans-serif;
+}
+.bar_btn button {
+  margin: 0 30px;
+}
+.sidebar_btns_left {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.sidebar_btns_left button {
+  text-transform: capitalize;
+  color:#a8741a;
+  font-size: 16px;
+  font-weight: 500;
+}
+.sidebar_btns_right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.sidebar_btns_right button {
+  text-transform: capitalize;
+    color:#a8741a;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+}
 .title_product_list {
-	display: flex;
-	justify-content: center;
-	margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
 }
