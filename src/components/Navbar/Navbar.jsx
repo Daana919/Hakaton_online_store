@@ -92,10 +92,9 @@ function ResponsiveAppBar() {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<AppBar position='static' style={{ background: "transparent", boxShadow: "none" }}>
+			<AppBar className='appbar' position='static' style={{ background: "transparent", boxShadow: "none", position: "relative", zIndex: "2" }}>
 				<Container maxWidth='xl'>
 					<Toolbar disableGutters>
-						{/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
 						<Typography
 							variant='h6'
 							noWrap
@@ -103,10 +102,9 @@ function ResponsiveAppBar() {
 							sx={{
 								mr: 2,
 								display: { xs: "none", md: "flex" },
-								fontFamily: "monospace",
-								fontWeight: 700,
+								fontWeight: 900,
 								letterSpacing: ".3rem",
-								color: "#a8741a",
+								color: "black",
 								textDecoration: "none",
 								cursor: "pointer",
 								fontFamily: "Chakra Petch",
