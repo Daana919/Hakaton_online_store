@@ -94,6 +94,10 @@ const ProductCard = ({ item }) => {
 							<span>
 								<b>${item.price}</b>
 							</span>
+							<br />
+							<span>
+								<b>{item.gender}</b>
+							</span>
 						</Typography>
 					</CardContent>
 				</div>

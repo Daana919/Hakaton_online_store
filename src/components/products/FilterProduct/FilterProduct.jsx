@@ -15,8 +15,8 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export default function RadioButtonsGroup() {
-  const { fetchByParams } = useProducts();
-
+	const { fetchByParams } = useProducts();
+  
   function handleGenderChange(event) {
     const searchParam = event.target.value.toLowerCase();
     fetchByParams("gender", searchParam); // Fetch products based on gender filter
@@ -218,4 +218,6 @@ export default function RadioButtonsGroup() {
       </div>
     </div>
   );
+
+
 }

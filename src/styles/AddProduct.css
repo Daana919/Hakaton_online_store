@@ -1,0 +1,51 @@
+.admin_panel {
+	height: 100%;
+	background-image: url(https://content.rolex.com/dam/watches/family-pages/datejust/2023/a-date-with-destiny/classic-watches-datejust-a-date-with-destiny-elegant-innovation-push.jpg?imwidth=1920);
+	/* background-color: #e7d4a1ba; */
+}
+
+.add_block {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	width: 100%;
+}
+.elem {
+	width: 40%;
+	color: black;
+	background-color: white;
+	padding: 3px 3px 3px;
+	margin-bottom: 5px;
+	border: none;
+}
+.admin_panel_title {
+	display: flex;
+	justify-content: center;
+	padding-top: 35px;
+	color: rgb(0, 0, 0);
+}
+.img_admin {
+	width: 100%;
+}
+
+.btn_admin {
+	width: 20%;
+	height: 40px;
+
+	background-color: white;
+	/* border: black solid 1px; */
+	color: black;
+	/* border-radius: 5px; */
+	margin-bottom: 30px;
+	border: none;
+}
+
+.btn_admin:hover {
+	background: black;
+	color: white;
+	border: black;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}

@@ -62,8 +62,11 @@ export default function Like() {
 								<Typography variant='body2' color='text.secondary'>
 									<b>Price:</b>
 									{row.item.price} <br />
-									<b>Type:</b>
-									{row.item.type}
+									<b>Brand:</b>
+									{row.item.brand}
+									<br />
+									<b>Gender:</b>
+									{row.item.gender}
 								</Typography>
 							</CardContent>
 						</Card>

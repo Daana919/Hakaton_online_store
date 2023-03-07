@@ -7,3 +7,9 @@
   z-index: 9999;
   overflow: hidden;
 } */
+
+.appbar:hover {
+	background: white !important;
+	position: "relative";
+}
+
