@@ -92,7 +92,7 @@ function ResponsiveAppBar() {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<AppBar position='static' style={{ background: "transparent", boxShadow: "none" }}>
+			<AppBar position='static' style={{ background: "transparent", boxShadow: "none" }} className='navbar'>
 				<Container maxWidth='xl'>
 					<Toolbar disableGutters>
 						{/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}

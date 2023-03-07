@@ -5,10 +5,39 @@ import Pagination from "@mui/material/Pagination";
 import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";
 import "..//../../styles/ProductList.css";
+import TuneIcon from "@mui/icons-material/Tune";
+
+import { useSearchParams } from "react-router-dom";
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormControl from "@mui/material/FormControl";
+import TextField from "@mui/material/TextField";
+import IconButton from "@mui/material/IconButton";
+import SearchIcon from "@mui/icons-material/Search";
 
 const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
   const { products, getProducts } = useProducts();
 
+  //search
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = useState(searchParams.get("q") || "");
+
+  useEffect(() => {
+    setSearchParams({
+      q: search,
+    });
+  }, [search]);
+
+  useEffect(() => {
+    getProducts();
+    setPage(1);
+  }, [searchParams]);
+
+  function handleSearch(e) {
+    setSearch(e.target.value);
+  }
+  //search logic end
   useEffect(() => {
     getProducts();
   }, []);
@@ -29,33 +58,28 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
 
   return (
     <div className="productList_container">
-      <video
-        className="video-bg"
-        autoplay
-        muted
-        loop
-        preload
-        controls
-        style={{ width: "100%" }}
-      >
-        <source
-          src="https://content.rolex.com/dam/watches/family-pages/datejust/update/2021/cover/cover-family-page-datejust.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div className="video-overlay">
-        <h2>Our collections</h2>
-      </div>
+      <TextField
+        className="productList_container__input"
+        id="input-with-icon-textfield"
+        placeholder="Search for watches"
+        onChange={handleSearch}
+        InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+              <IconButton onClick={handleSearch}>
+                <SearchIcon />
+              </IconButton>
+            </InputAdornment>
+          ),
+        }}
+        variant="standard"
+      />
 
       <div className="sidebar">
         <div className="sidebar_btns_left">
-          <h5>All watches</h5>
-        </div>
-        <div className="sidebar_btns_right">
           <Button onClick={changeSideBarStatus} className="bar_btn">
-            Filters <AddIcon />
+            <TuneIcon />
           </Button>
-          <Button className="bar_btn">Sort By</Button>
         </div>
       </div>
       <div className="product-list">

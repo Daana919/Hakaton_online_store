@@ -5,12 +5,19 @@
   justify-content: center;
   align-items: center;
 
-      /* display: grid;
-    grid-template-rows: 100vh;
-    overflow: hidden;
-    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.5); */
+}
+.productList_container__input {
+  width: 60%;
+}
+.productList_container__input input {
+  margin: 0 28px;
+  font-size: 28px;
+  font-family: "Chakra Petch", sans-serif;
 }
 
+.productList_container__input svg {
+  margin: 0 28px;
+}
 
 .product-list {
   width: 95%;
@@ -29,10 +36,11 @@
   align-items: center;
   background-color: #efefef;
   height: 5%;
-  margin: 0 auto;
+  margin: 20px auto;
   border-bottom: 1px solid #eff1f3;
   line-height: 64px;
   font-family: "Chakra Petch", sans-serif;
+
 }
 .bar_btn button {
   margin: 0 30px;

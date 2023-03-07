@@ -1,10 +1,10 @@
 .sideBar {
-  background: #eff1f3;
-  width: 20%;
-  height: 90vh;
+  background: #f8f8f8;
+  width: 30%;
+  min-height: 100vh;
 }
 .sidebar_container {
-  margin-top: 40%;
+  margin-top: 60%;
 }
 .sidebar_title {
   display: flex;
@@ -15,7 +15,27 @@
 .sidebar_title h3 {
   margin-left: 5px;
   font-size: 24px;
+  font-weight: 600;
 }
 .sidebar_content {
     margin-left: 36px;
+}
+.sidebar_accordion {
+ background: #f8f8f8 !important;
+   border-radius: 0 !important;
+   box-shadow: none !important;
+   padding: 10px;
+}
+.sidebar_accordion p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.sidebar_accordion span {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  text-transform: capitalize !important;
+}
+.accordion_radio span {
+   background-color: #000;
 }
