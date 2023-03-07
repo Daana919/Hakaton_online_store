@@ -70,6 +70,11 @@
 		height: 28px;
 		font-size: 11px;
 	}
+	.thumb {
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 60px;
+	}
 }
 
 @media all and (max-width: 325px) {

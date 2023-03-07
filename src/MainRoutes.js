@@ -10,6 +10,7 @@ import ProductDetailsPage from "./pages/ProductDetailsPage";
 import EditProductPage from "./pages/EditProductPage";
 import CartPage from "./pages/CartPage";
 import LikePage from "./pages/LikePage";
+import FormOrderPage from "./pages/FormOrderPage";
 
 const MainRoutes = () => {
 	const PUBLIC_ROUTES = [
@@ -62,6 +63,11 @@ const MainRoutes = () => {
 			link: "/like",
 			element: <LikePage />,
 			id: 10,
+		},
+		{
+			link: "/cart/order",
+			element: <FormOrderPage />,
+			id: 11,
 		},
 	];
 

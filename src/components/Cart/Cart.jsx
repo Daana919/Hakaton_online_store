@@ -3,12 +3,14 @@ import "../../styles/Cart.css";
 import DeleteIcon from "@mui/icons-material/Delete";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import { useNavigate } from "react-router-dom";
 
 // custom
 import { useCart } from "../../contexts/CartContextProvider";
 
 export default function Cart() {
 	const { getCart, cart, changeProductCount, deleteProductFromCart } = useCart();
+	const navigate = useNavigate();
 
 	React.useEffect(() => {
 		getCart();
@@ -43,7 +45,7 @@ export default function Cart() {
 														<h6 className='text-muted'>{row.item.title}</h6>
 														<h6 className='text-black mb-0'>Category: {row.item.category}</h6>
 
-														<h6 className='text-black mb-0'>Type: {row.item.type}</h6>
+														<h6 className='text-black mb-0'>Brand: {row.item.brand}</h6>
 													</div>
 													<div className='col-md-3 col-lg-3 col-xl-2 d-flex'>
 														<button className='btn btn-link px-2' onClick={() => changeProductCount(parseInt(row.count) - 1, row.item.id)}>
@@ -73,7 +75,7 @@ export default function Cart() {
 												<h6 className='mb-0'>
 													<h6 style={{ color: "black" }}>Total Price: ${cart?.totalPrice}</h6>
 													<a href='/' className='text-body'>
-														<i className='fas fa-long-arrow-alt-left me-2'></i>
+														<i className='fas fa-long-arrow-alt-left me-2' onClick={() => navigate("/products")}></i>
 														Back to shop
 													</a>
 												</h6>
@@ -87,22 +89,7 @@ export default function Cart() {
 											</h3>
 											{/* <hr className='my-4' /> */}
 
-											<div className='d-flex justify-content-between mb-4'>
-												{/* <h5 className='text-uppercase' style={{ color: "black" }}>
-													Count:
-												</h5> */}
-												{/* <h5 style={{ color: "black" }}>Price:</h5> */}
-											</div>
-											{/* <h5 className='text-uppercase mb-3' style={{ color: "black" }}>
-												Give code
-											</h5> */}
-
-											<div className='mb-5'>
-												{/* <div className='form-outline'>
-													<input type='text' id='form3Examplea2' placeholder='Enter your code' className='form-control form-control-lg' />
-												</div> */}
-											</div>
-
+											<div className='d-flex justify-content-between mb-4'></div>
 											<hr className='my-4' />
 
 											<div className='d-flex justify-content-between mb-5'>
@@ -110,7 +97,7 @@ export default function Cart() {
 													Total price: ${cart?.totalPrice}
 												</h5>
 											</div>
-											<button type='button' className='btn btn-dark btn-block btn-lg' data-mdb-ripple-color='dark'>
+											<button type='button' onClick={() => navigate("/cart/order")} className='btn btn-dark btn-block btn-lg' data-mdb-ripple-color='dark'>
 												Checkout
 											</button>
 										</div>
