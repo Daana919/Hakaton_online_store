@@ -22,6 +22,7 @@ export default function RadioButtonsGroup() {
 		fetchByParams("gender", searchParam); // Fetch products based on gender filter
 	}
 
+
 	function handleBrandsChange(e) {
 		const searchParam = e.target.value;
 		fetchByParams("brand", searchParam);

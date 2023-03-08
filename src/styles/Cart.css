@@ -1,0 +1,12 @@
+.shopCartSection {
+    background-color: #fff;
+    font-family: "Chakra Petch", sans-serif;
+    text-transform: capitalize;
+}
+.cart_bg {
+    border-radius: 15px;
+    background-color: #c5b8a4 !important;
+}
+.btn-size {
+    width: 5px;
+}

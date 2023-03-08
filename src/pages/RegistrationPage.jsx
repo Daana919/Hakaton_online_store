@@ -55,66 +55,22 @@ const CustomInput = React.forwardRef(function CustomInput(props, ref) {
 const RegistrationPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [confPassword, setConfPassword] = useState();
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [gender, setGender] = useState("");
+
   const { register, error } = useAuth();
 
   
    const navigate = useNavigate();
   return (
-    <div className="wrapper_form">
         <div className="container-form">
           <FormControl className="form-control">
             <h1>CREATE MY ACCOUNT</h1>
             <p>
-              Longines gives you an extraordinary access to a world of products,
+              TimeSculp gives you an extraordinary access to a world of products,
               experts and services.
             </p>
             {error ? <h3>{error}</h3> : ""}
             <Stack spacing={2} direction="column">
               <div className="form_control__content">
-                <div className="form_control_right_sight">
-                  <FormLabel>*First Name</FormLabel>
-                  <CustomInput
-                    type="text"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    className="input_box"
-                  />
-                  <FormLabel>*Last Name</FormLabel>
-                  <CustomInput
-                    type="text"
-                    value = {lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                    className="input_box"
-                  />
-                  <FormControl>
-                    <FormLabel id="demo-row-radio-buttons-group-label">
-                      Gender
-                    </FormLabel>
-                    <RadioGroup
-                      row
-                      aria-labelledby="demo-row-radio-buttons-group-label"
-                      name="row-radio-buttons-group"
-                      value={gender}
-                      onChange={(e) => setGender(e.target.value)}
-                    >
-                      <FormControlLabel
-                        value="female"
-                        control={<Radio />}
-                        label="Female"
-                      />
-                      <FormControlLabel
-                        value="male"
-                        control={<Radio />}
-                        label="Male"
-                      />
-                    </RadioGroup>
-                  </FormControl>
-                </div>
-                <div className="form_control_left_sight">
                   <FormLabel>*Email</FormLabel>
                   <CustomInput
                     type="text"
@@ -129,24 +85,12 @@ const RegistrationPage = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     className="input_box"
                   />
-                  <FormLabel>*Confirm Password</FormLabel>
-                  <CustomInput
-                    type="password"
-                    value= {confPassword}
-                    onChange={(e) => setConfPassword(e.target.value)}
-                    className="input_box"
-                  />
-                </div>
               </div>
               <Button
                 onClick={() =>
                   register(
                     username,
                     password,
-                    confPassword,
-                    firstName,
-                    lastName,
-                    gender
                   )
                 }
                 className="btn_reg"
@@ -156,7 +100,6 @@ const RegistrationPage = () => {
             </Stack>
           </FormControl>
         </div>
-    </div>
   );
 };
 

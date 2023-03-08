@@ -1,341 +1,252 @@
-/* .homepage {
-	position: relative;
+.homepage {
+  width: 100%;
+  background-color: #aca190;
 }
-.back_video {
-	position: absolute;
-	/* right: 0;
-	bottom: 0; */
-/* z-index: -1;
-
-} */
-.background {
-	background: rgb(255, 255, 255) !important;
+.homepage_top {
+  width: 100%;
+  height: 90vh;
+}
+.homepage_top_content {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homepage_top_title {
+  color: rgb(255, 255, 255);
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 34px;
+  text-transform: capitalize;
+  z-index: 3;
+  margin-bottom: 80px;
 }
 .header_top {
-	/* background-image: url(https://images.zenith-watches.com/website-zenith-pre-prod/5a4ff4db-b0c5-41e4-970e-969676deea13_DEFY+Skyline+Boutique+Edition+v4.png?im=Resize=1500); */
-	/* background-image: url(https://www.grand-seiko.com/global-en/-/media/Images/GlobalEn/GrandSeiko/Home/top/mainvisual/SBGW295/SBGW295_KV_PC.jpg?mh=1000&mw=1500&hash=48D73940F09A6506539E9A99930BF05F); */
-	/* background: rgb(0, 0, 0); */
-	background-repeat: no-repeat;
-	display: flex;
-	background: white;
+  display: flex;
+  /* background: white; */
 }
 
 .header_top_content {
-	display: flex;
-	margin-left: 100px;
-	flex-direction: column;
-	width: 30%;
-	position: relative;
+  display: flex;
+  margin-left: 100px;
+  flex-direction: column;
+  width: 30%;
+  position: relative;
 }
 .header_top_content_title {
-	font-size: 38px;
-	color: rgb(0, 0, 0);
-	text-transform: uppercase;
-	color: transparent;
-	letter-spacing: 5px;
-	font-weight: bold;
-	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
-	background-clip: text;
+  /* background-image: url(https://content.rolex.com/dam/homepage/cut-out/homepage-datejust-41-m126333-0010-cut-out.jpg);
+  background-position: center 54.2606%; */
+  font-size: 44px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: transparent;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  background-clip: text;
+  font-family: "Chakra Petch", sans-serif;
 }
-
-.header_top_par1 {
-	font-size: 12px;
-	color: rgb(0, 0, 0);
-	color: rgb(0, 0, 0);
+.header_top_content p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #4a453d;
 }
-
-.header_top_par2 {
-	color: rgb(0, 0, 0);
-}
-
 .header_price {
-	color: rgb(149 148 143);
-	text-transform: uppercase;
-	color: transparent;
-	font-weight: bold;
-	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
-	background-clip: text;
-	font-size: 25px;
-	margin-left: 10px;
+  color: rgb(149 148 143);
+  text-transform: uppercase;
+  color: transparent;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  background-clip: text;
+  font-size: 25px;
+  margin-left: 10px;
+}
+.btn_header {
+  width: 40%;
+  height: 40px;
+  font-size: 15px;
+  background-color: white;
+  border: #aca190 solid 1px;
+  color: black;
+  border-radius: 3px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Chakra Petch", sans-serif;
+}
+.btn_header:hover {
+  background: #aca190;
+  color: white;
+  border: black;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.collection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+.collection_content {
+  color: rgb(0, 0, 0);
+  width: 100%;
+  text-align: center;
+  padding: 64px 128px 0 128px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: white;
+}
+.gold {
+  font-family: "Chakra Petch", sans-serif;
+  text-transform: uppercase;
+  color: transparent;
+  font-size: 34px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  background-clip: text;
+}
+.collection_text {
+  font-family: "Chakra Petch", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  margin-bottom: 70px;
+  margin-top: 51px;
 }
 
-/* .header_top_btn {
-	width: 12%;
-	height: 35px;
-	color: #a8741a;
-	border: 3px solid #a8741a;
-}
-.header_top_btn :hover {
-	background-color: #a8741a;
-} */
-
-/* *::before,
-*::after {
-	padding: 0;
-	margin: 0;
-} */
-
-/* .btn_div {
-	background-image: linear-gradient(to right bottom, #fff, #f4edfc);
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-.btn {
-	border-radius: 4px;
-	text-transform: uppercase;
-	position: relative;
-	text-decoration: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 1.5px solid black;
-	padding: 1rem 2rem;
-	font-size: 3rem;
-	background-size: 300%;
-	transition: all 0.6s;
-}
-
-.orange {
-	color: #a8741a;
-	background-image: linear-gradient(120deg, white 50%, #a8741a 50%);
-	height: 10px;
-	width: 45px;
-	font-size: 10px;
-}
-
-.btn:hover {
-	color: #fff;
-	background-position: 100%;
-	transform: translateX(0.5rem);
-}
-
-.btn:active {
-	transform: translate(0.5rem, 0.5rem);
-	box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
-} */
-/* watches */
-
-.thumb_section {
-	position: relative;
-	/* width: 100vw;
-	height: 20vh; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 65%;
+.pos_img__section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
 }
 
 .thumb li {
-	display: inline-block;
-	list-style: none;
-	margin: 5px 30px;
-	cursor: pointer;
-	transition: 0.5s;
+  display: inline-block;
+  list-style: none;
+  margin: 5px 30px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .thumb li:hover {
-	transform: translateY(-20px);
+  transform: translateY(-20px);
 }
-/* .thumb li img {
-	width: 100px;
-}
+
 
 .thumb li img {
-	width: 40px;
-} */
+  width: 100px;
 
-.homepage {
-	background: rgb(0, 0, 0);
 }
-
-.gold {
-	text-transform: uppercase;
-	color: transparent;
-	font-size: 34px;
-	letter-spacing: 5px;
-	font-weight: bold;
-	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
-	background-clip: text;
-}
-
-.collection_text {
-	color: rgb(0, 0, 0);
-	font-size: 15px;
-	margin-bottom: 70px;
-	margin-top: 51px;
-}
-
-.collection {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin-top: 120px;
-}
-.collection_content {
-	color: rgb(0, 0, 0);
-	width: 75%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-	background: white;
+.thumb li img {
+width:40px;
 }
 
 .image_block {
-	display: flex;
-	width: 100%;
-	height: 20%;
-	justify-content: center;
-	margin-top: 50px;
-	margin-bottom: 100px;
-	background: white;
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background: white;
 }
 .images {
-	width: 27%;
-	height: 10%;
-	border-radius: 5px;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: 0.3s ease-in-out;
-	transition: 0.3s ease-in-out;
+  width: 27%;
+  height: 10%;
+  border-radius: 5px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-
 .images:hover {
-	/* transform: translateY(-20px); */
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .present {
-	margin: 50px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	position: relative;
+  width: 100%;
+  /* margin: 50px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
 }
-
 .present_img {
-	width: 50%;
-	margin: 60px;
+  width: 45%;
+  margin: 60px;
+  border-radius: 10px;
+}
+.present_content {
+  width: 50%;
+  margin: 30px;
+}
+.present_content_title {
+  font-family: "Chakra Petch", sans-serif;
+  text-transform: uppercase;
+  color: transparent;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  background-clip: text;
 }
 .present_content_info {
-	color: rgb(0, 0, 0);
-	font-size: 15px;
-}
+  color: rgb(0, 0, 0);
+  font-size: 15px;
 
-.present_content_btn {
-	width: 50%;
-	height: 40px;
-	font-size: 15px;
-	background-color: white;
-	border: black solid 1px;
-	color: black;
-	border-radius: 5px;
+  font-family: "Chakra Petch", sans-serif;
 }
-
-.present_content_btn:hover {
-	background: black;
-	color: white;
-	border: black;
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
-.btn_header {
-	width: 40%;
-	height: 40px;
-	font-size: 15px;
-	background-color: white;
-	border: black solid 1px;
-	color: black;
-	border-radius: 5px;
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.btn_header:hover {
-	background: black;
-	color: white;
-	border: black;
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
-
-.location {
-	background-image: url(https://i.postimg.cc/zvMgtsdM/kisspng-omega-speedmaster-omega-seamaster-watch-coaxial-es-watches-5acdc390e168f2-449941241523434384.png);
-	width: 30%;
-	height: 30%;
-}
-
-.present_content_title {
-	text-transform: uppercase;
-	color: transparent;
-	font-size: 34px;
-	letter-spacing: 5px;
-	font-weight: bold;
-	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
-	background-clip: text;
-}
-
-.video-bg {
-	overflow: hidden;
-	z-index: -100;
-	position: relative;
-	height: 100%;
-	width: 100%;
-	padding-top: 45%;
-}
-
 .fullscreen-bg__video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 90%;
-	object-fit: cover;
-	/* background: black; */
-	/* position: fixed; */
-}
-.overlay {
-	background: rgba(0, 0, 0, 0.6);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 4;
-}
-.overlay h1 {
-	text-align: center;
-	color: #fff;
-	font-size: 70px;
-	margin-top: 17%;
-}
-.homepage_top {
-	width: 100%;
-	height: 90vh;
-	/* background: black; */
-}
-.homepage_top_content {
-	width: 100%;
-	height: 75vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-.homepage_top_title {
-	color: rgb(255, 255, 255);
-	position: absolute;
-	z-index: 3;
-}
-.homepage_top_p {
-	position: absolute;
-	z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  box-shadow: none;
 }
