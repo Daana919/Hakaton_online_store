@@ -66,7 +66,7 @@ const ProductDetails = () => {
               <div className="container_right_sight animate__animated animate__backInDown">
                 <h3>{productDetails.name}</h3>
                 <p>{productDetails.description}</p>
-                <p style={{ fontSize: "18px" }}>
+                <p style={{ fontSize: "18px", color: "#a8741a" }}>
                   <b>${productDetails.price}</b>
                 </p>
 
@@ -74,7 +74,7 @@ const ProductDetails = () => {
                   Add to Cart
                 </StyledButton>
                 <br />
-                <button className="btn_icon">
+                <div className="btn_icon">
                   <IconButton
                     size="small"
                     onClick={() => addProductToLike(productDetails)}
@@ -93,7 +93,7 @@ const ProductDetails = () => {
                   <a onClick={() => addProductToLike(productDetails)}>
                     ADD TO WISHLIST
                   </a>
-                </button>
+                </div>
 
                 <div className="wrapper_accordion">
                   <Accordion className="accordion">
@@ -159,7 +159,7 @@ const ProductDetails = () => {
               </div>
             </div>
             <div className="container_features animate__animated animate__backInLeft">
-              <h2>SPECIFICATIONS</h2> <hr />
+              <h2>SPECIFICATIONS</h2>
               <div className="features_content">
                 <div className="features_ls">
                   <h4>Case</h4>

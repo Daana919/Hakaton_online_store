@@ -43,7 +43,6 @@ export default function Cart() {
 													</div>
 													<div className='col-md-3 col-lg-3 col-xl-3'>
 														<h6 className='text-muted'>{row.item.name}</h6>
-
 														<h6 className='text-black mb-0'>Brand: {row.item.brand}</h6>
 													</div>
 													<div className='col-md-3 col-lg-3 col-xl-2 d-flex'>
@@ -67,7 +66,6 @@ export default function Cart() {
 													</div>
 												</div>
 											))}
-
 											<hr className='my-4' />
 
 											<div className='pt-5'>
@@ -94,7 +92,7 @@ export default function Cart() {
 
 											<div className='d-flex justify-content-between mb-4'></div>
 											<hr className='my-4' />
-
+                      
 											<div className='d-flex justify-content-between mb-5'>
 												<h5 className='text-uppercase' style={{ color: "black" }}>
 													Total price: ${cart?.totalPrice}
