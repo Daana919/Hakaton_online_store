@@ -39,3 +39,59 @@
   color: #aca190;
   font-size: 12px;
 }
+
+/* adaptive  */
+@media only screen and (max-width: 1300px) {
+  .logo_design a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .navbar_acc-like-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo_design {
+    margin-right: auto;
+  }
+  
+  .logo_design__adaptive {
+    display: none;
+  }
+  
+  .logo_design a {
+    font-size: 24px;
+  }
+  
+  .logo_design span {
+    display: none;
+  }
+  
+  .navbar_acc-like-cart svg {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .navbar {
+    padding: 15px;
+  }
+  
+  .navbar_acc-like-cart svg {
+    font-size: 18px;
+  }
+  
+  .logo_design a {
+    font-size: 20px;
+  }
+}
+

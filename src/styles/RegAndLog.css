@@ -6,19 +6,6 @@
   background: #eff1f3;
   height: 100vh;
 }
-.container-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-}
-/* .form_control__content {
-    display: flex ;
-    align-items: center;
-    text-align: start;
-  color: #003150;
-} */
 
 .form-control {
     width: 100% !important;
@@ -27,7 +14,10 @@
   align-items: center;
   text-align: start;
   color: #a8741a;
-  
+  padding: 40px !important;
+}
+.form-control h1 {
+  color:#7b7367;
 }
 .form_control__content .input_box input {
   background-color: #eff1f3;
@@ -39,7 +29,7 @@
 }
 
 .form-control .btn_reg {
-  background-color: #003150;
+  background-color: #7b7367;
   color: #eff1f3;
   width: 100%;
   line-height: 50px;
@@ -49,7 +39,7 @@
   justify-content: space-between;
 }
 .form-control .btn_log {
-  background-color: #003150;
+  background-color: #7b7367;
   color: #eff1f3;
   width: 100%;
   line-height: 58px;
@@ -60,35 +50,54 @@
 }
 .form-control .btn_reg:hover {
   background-color: #fff;
-  color: #003150;
-  border: 1px solid #003150;
+  color: #7b7367;
+  border: 1px solid #7b7367;
 }
 .form-control .btn_log:hover {
   background-color: #fff;
-  color: #003150;
-  border: 1px solid #003150;
+  color: #7b7367;
+  border: 1px solid #7b7367;
+}
+.form_control__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 /* login */
-h1 {
-  color: #003150;
+.form_control__content_login {
+  display: flex;
+  align-items: center;
+  margin:0 auto;
 }
 .login_container {
   height: 100vh;
-  color: #003150;
+  color: #7b7367;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Chakra Petch", sans-serif;
 }
 .form_control_right_sight_text {
   width: 50%;
   margin: 5%;
+}
+h3 {
+  color:#7b7367
 }
 .form_control_leftlogin_sight {
   /* margin: 5%; */
   padding-right: 50px;
   border-right: 1px solid #c2c9cf;
   width: 50%;
+}
+.form_control__content_login .input_box input {
+  background-color: #eff1f3;
+  border-radius: 0;
+  border: 1px solid #c2c9cf;
+}
+.form_control__content_login .input_box input:hover {
+  border: 1px solid #000;
 }
 .form_control_right_sight_text ul {
   display: flex;
@@ -108,91 +117,36 @@ li {
 }
 
 /*adaptive*/
-@media only screen and (max-width: 1200px) {
-  .wrapper_form {
-    height: auto;
-    padding: 10px;
+@media (max-width: 1300px) {
+  .form-control {
+    padding: 20px !important;
   }
-
-  .form_control__content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .form_control__content .input_box input {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .form-control .btn_reg,
-  .form-control .btn_log {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .form_control_leftlogin_sight,
-  .form_control_right_sight_text {
-    width: 100%;
-    padding-right: 0;
-    border-right: none;
-    margin-bottom: 20px;
-  }
-
-  .form_control_right_sight_text ul {
-    margin: 0;
+  .form-control .btn_reg, .form-control .btn_log {
+    line-height: 40px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .form_control_leftlogin_sight {
+@media (max-width: 768px) {
+  .form_control_leftlogin_sight, .form_control_right_sight_text {
+    width: 100%;
+    padding: 0;
+    border-right: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-control {
+    padding: 10px !important;
+  }
+  .form-control h1 {
+    font-size: 24px;
+  }
+  .form-control .btn_reg, .form-control .btn_log {
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .form_control_right_sight_text {
     display: none;
   }
-
-  .form_control_right_sight_text {
-    width: 100%;
-  }
-
-  .form_control_right_sight_text ul li {
-    margin-bottom: 10px;
-  }
 }
 
-@media only screen and (max-width: 480px) {
-  .form_control__content .input_box input {
-    font-size: 16px;
-  }
-
-  .form-control .btn_reg,
-  .form-control .btn_log {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  .form_control_right_sight_text ul li {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .form_control__content .input_box input {
-    font-size: 14px;
-  }
-
-  .form-control .btn_reg,
-  .form-control .btn_log {
-    font-size: 14px;
-    line-height: 44px;
-    padding: 5px 16px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  .form_control_right_sight_text ul li {
-    font-size: 12px;
-  }
-}

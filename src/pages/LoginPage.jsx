@@ -56,12 +56,12 @@ const LoginPage = () => {
 
   return (
     <div className="wrapper_form">
-      <div className="container-form">
+      <div className="login_container">
         <FormControl className="form-control">
           <h1>LOG IN ACCOUNT</h1>
           {error ? <h3>{error}</h3> : ""}
 
-          <div className="form_control__content">
+          <div className="form_control__content_login">
             {/* <Stack spacing={3} direction="column"> */}
             <div className="form_control_leftlogin_sight">
               <h3>LOGIN</h3>

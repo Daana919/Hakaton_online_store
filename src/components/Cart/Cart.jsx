@@ -26,10 +26,7 @@ export default function Cart() {
       <div className="container py-5 h-100 ">
         <div className="row d-flex justify-content-center align-items-center h-100 w-100">
           <div className="col-12">
-            <div
-              className="card card-registration card-registration-2 cart_bg"
-              
-            >
+            <div className="card card-registration card-registration-2 cart_bg">
               <div className="card-body p-0">
                 <div className="row g-0">
                   <div className="col-lg-8">
@@ -118,25 +115,10 @@ export default function Cart() {
                       ))}
 
                       <hr className="my-4" />
-
-                      <div className="pt-5">
-                        <h6 className="mb-0">
-                          <h6 style={{ color: "black" }}>
-                            Total Price: ${cart?.totalPrice}
-                          </h6>
-                          <a href="/" className="text-body">
-                            <i
-                              className="fas fa-long-arrow-alt-left me-2"
-                              onClick={() => navigate("/products")}
-                            ></i>
-                            Back to shop
-                          </a>
-                        </h6>
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-4 bg-grey">
-                    <div className="p-3 " >
+                    <div className="p-3 ">
                       <h3
                         className="fw-bold mb-0 p-4 "
                         style={{ color: "black" }}
@@ -164,6 +146,17 @@ export default function Cart() {
                       >
                         Checkout
                       </button>
+                      <div className="pt-5">
+                        <h6 className="mb-0">
+                          <a href="/" className="text-body">
+                            <i
+                              className="fas fa-long-arrow-alt-left me-2"
+                              onClick={() => navigate("/products")}
+                            ></i>
+                            Back to shop
+                          </a>
+                        </h6>
+                      </div>
                     </div>
                   </div>
                 </div>
