@@ -1,10 +1,10 @@
 .save_container {
-display: flex;
-justify-content: center;
-flex-direction: column;
-font-family: "Chakra Petch", sans-serif;
-font-weight: 600;
-background-color: #312e29;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-family: "Chakra Petch", sans-serif;
+	font-weight: 600;
+	background-color: #312e29;
 }
 .save_container__content {
 	font-size: 44px;
@@ -67,4 +67,10 @@ background-color: #312e29;
 	width: 100%;
 	height: 128px;
 	align-items: center;
+}
+
+@media all and (max-width: 320px) {
+	.btn_clean_like {
+		width: 30%;
+	}
 }
