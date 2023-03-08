@@ -107,4 +107,7 @@
 	.image_block {
 		margin-bottom: 10px;
 	}
+	.btn_header {
+		width: 65%;
+	}
 }
