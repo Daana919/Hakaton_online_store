@@ -37,78 +37,201 @@ export default function RadioButtonsGroup() {
 	}
 
 	return (
-		<div className='sidebar_container'>
-			<div className='sidebar_title'>
-				<TuneIcon />
-				<h3>Filters</h3>
-			</div>
-			<div className='sidebar_content'>
-				<div className='sidebar_inner_accordion'>
-					<Accordion className='sidebar_accordion'>
-						<AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls='panel1a-content' id='panel1a-header'>
-							<Typography>Brands</Typography>
-						</AccordionSummary>
-						<AccordionDetails>
-							<FormControl>
-								<RadioGroup aria-labelledby='demo-radio-buttons-group-label' defaultValue='all' name='radio-buttons-group' onChange={handleBrandsChange}>
-									<FormControlLabel value='all' control={<Radio color='default' />} label='Shop All Brands' />
-									<FormControlLabel value='Zenith' control={<Radio color='default' />} label='Zenith' />
-									<FormControlLabel value='Rolex' control={<Radio color='default' />} label='Rolex' />
-									<FormControlLabel value='Audemars Piguet' control={<Radio color='default' />} label='Audemars Piguet' />
-									<FormControlLabel value='Tissot' control={<Radio color='default' />} label='Tissot' />
-								</RadioGroup>
-							</FormControl>
-						</AccordionDetails>
-					</Accordion>
-					<Accordion className='sidebar_accordion'>
-						<AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls='panel2a-content' id='panel2a-header'>
-							<Typography>Gender</Typography>
-						</AccordionSummary>
-						<AccordionDetails>
-							<FormControl>
-								<RadioGroup aria-labelledby='demo-radio-buttons-group-label' defaultValue='all' name='radio-buttons-group' onChange={handleGenderChange}>
-									<FormControlLabel value='all' control={<Radio color='default' />} label='All' />
-									<FormControlLabel value='women' control={<Radio color='default' />} label='Women' />
-									<FormControlLabel value='men' control={<Radio color='default' />} label='Men' />
-									<FormControlLabel value='unisex' control={<Radio color='default' />} label='Unisex' />
-								</RadioGroup>
-							</FormControl>
-						</AccordionDetails>
-					</Accordion>
-					<Accordion className='sidebar_accordion'>
-						<AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls='panel2a-content' id='panel2a-header'>
-							<Typography>Diameter</Typography>
-						</AccordionSummary>
-						<AccordionDetails>
-							<FormControl>
-								<RadioGroup aria-labelledby='demo-radio-buttons-group-label' defaultValue='all' name='radio-buttons-group' onChange={handleDiameterChange}>
-									<FormControlLabel value='all' control={<Radio color='default' />} label='All' />
-									<FormControlLabel value='37' control={<Radio color='default' />} label='37' />
-									<FormControlLabel value='38' control={<Radio color='default' />} label='38' />
-									<FormControlLabel value='39' control={<Radio color='default' />} label='39' />
-									<FormControlLabel value='40' control={<Radio color='default' />} label='40' />
-									<FormControlLabel value='41' control={<Radio color='default' />} label='41' />
-									<FormControlLabel value='42' control={<Radio color='default' />} label='42' />
-								</RadioGroup>
-							</FormControl>
-						</AccordionDetails>
-					</Accordion>
-					<Accordion className='sidebar_accordion'>
-						<AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls='panel2a-content' id='panel2a-header'>
-							<Typography>Material</Typography>
-						</AccordionSummary>
-						<AccordionDetails>
-							<FormControl>
-								<RadioGroup aria-labelledby='demo-radio-buttons-group-label' defaultValue='all' name='radio-buttons-group' onChange={handleMaterialChange}>
-									<FormControlLabel value='all' control={<Radio color='default' />} label='All' />
-									<FormControlLabel value='Steel' control={<Radio color='default' />} label='Steel' />
-									<FormControlLabel value='Stainless Steel' control={<Radio color='default' />} label='Stainless Steel' />
-								</RadioGroup>
-							</FormControl>
-						</AccordionDetails>
-					</Accordion>
-				</div>
-			</div>
-		</div>
-	);
+    <div className="sidebar_container">
+      <div className="sidebar_title">
+        <TuneIcon />
+        <h3>Filters</h3>
+      </div>
+      <div className="sidebar_content">
+        <div className="sidebar_inner_accordion">
+          <Accordion className="sidebar_accordion">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>Brands</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FormControl>
+                <RadioGroup
+                  aria-labelledby="demo-radio-buttons-group-label"
+                  defaultValue="all"
+                  name="radio-buttons-group"
+                  onChange={handleBrandsChange}
+                >
+                  <FormControlLabel
+                    value="all"
+                    control={<Radio color="default" />}
+                    label="Shop All Brands"
+                  />
+                  <FormControlLabel
+                    value="Zenith"
+                    control={<Radio color="default" />}
+                    label="Zenith"
+                  />
+                  <FormControlLabel
+                    value="Rolex"
+                    control={<Radio color="default" />}
+                    label="Rolex"
+                  />
+                  <FormControlLabel
+                    value="Audemars Piguet"
+                    control={<Radio color="default" />}
+                    label="Audemars Piguet"
+                  />
+                  <FormControlLabel
+                    value="Tissot"
+                    control={<Radio color="default" />}
+                    label="Tissot"
+                  />
+                </RadioGroup>
+              </FormControl>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="sidebar_accordion">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <Typography>Gender</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FormControl>
+                <RadioGroup
+                  aria-labelledby="demo-radio-buttons-group-label"
+                  defaultValue="all"
+                  name="radio-buttons-group"
+                  onChange={handleGenderChange}
+                >
+                  <FormControlLabel
+                    value="all"
+                    control={<Radio color="default" />}
+                    label="All"
+                  />
+                  <FormControlLabel
+                    value="women"
+                    control={<Radio color="default" />}
+                    label="Women"
+                  />
+                  <FormControlLabel
+                    value="men"
+                    control={<Radio color="default" />}
+                    label="Men"
+                  />
+                  <FormControlLabel
+                    value="unisex"
+                    control={<Radio color="default" />}
+                    label="Unisex"
+                  />
+                </RadioGroup>
+              </FormControl>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="sidebar_accordion">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <Typography>Diameter</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FormControl>
+                <RadioGroup
+                  aria-labelledby="demo-radio-buttons-group-label"
+                  defaultValue="all"
+                  name="radio-buttons-group"
+                  onChange={handleDiameterChange}
+                >
+                  <FormControlLabel
+                    value="all"
+                    control={<Radio color="default" />}
+                    label="All"
+                  />
+                  <FormControlLabel
+                    value="37"
+                    control={<Radio color="default" />}
+                    label="37"
+                  />
+                  <FormControlLabel
+                    value="38"
+                    control={<Radio color="default" />}
+                    label="38"
+                  />
+                  <FormControlLabel
+                    value="39"
+                    control={<Radio color="default" />}
+                    label="39"
+                  />
+                  <FormControlLabel
+                    value="40"
+                    control={<Radio color="default" />}
+                    label="40"
+                  />
+                  <FormControlLabel
+                    value="41"
+                    control={<Radio color="default" />}
+                    label="41"
+                  />
+                  <FormControlLabel
+                    value="42"
+                    control={<Radio color="default" />}
+                    label="42"
+                  />
+                </RadioGroup>
+              </FormControl>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="sidebar_accordion">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <Typography>Material</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FormControl>
+                <RadioGroup
+                  aria-labelledby="demo-radio-buttons-group-label"
+                  defaultValue="all"
+                  name="radio-buttons-group"
+                  onChange={handleMaterialChange}
+                >
+                  <FormControlLabel
+                    value="all"
+                    control={<Radio color="default" />}
+                    label="All"
+                  />
+                  <FormControlLabel
+                    value="Steel"
+                    control={<Radio color="default" />}
+                    label="Steel"
+                  />
+                  <FormControlLabel
+                    value="Everose Gold"
+                    control={<Radio color="default" />}
+                    label="Everose Gold"
+                  />
+                  <FormControlLabel
+                    value="Titanium"
+                    control={<Radio color="default" />}
+                    label="Titanium"
+                  />
+
+                  <FormControlLabel
+                    value="Stainless steel"
+                    control={<Radio color="default" />}
+                    label="Stainless Steel"
+                  />
+                </RadioGroup>
+              </FormControl>
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      </div>
+    </div>
+  );
 }

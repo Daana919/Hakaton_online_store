@@ -15,6 +15,9 @@
   cursor: pointer;
   font-family: "Times Roman";
 }
+.logo_design a:hover {
+  color: #000;
+}
 .logo_design span {
   margin-right: 15px;
   color: #aca190;
