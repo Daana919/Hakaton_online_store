@@ -91,8 +91,8 @@ const ProductCard = ({ item }) => {
             </div>
           </CardMedia>
           <CardContent style={{ height: "28%" }} className="card_content">
-            <Typography className="mt-0" gutterBottom>
-              <h3>{item.name}</h3>
+            <Typography className="mt-0 " gutterBottom>
+              <h3 style={{ color: "#000" }}>{item.name}</h3>
             </Typography>
             <Typography variant="body2" color="text.secondary">
               <span>
@@ -100,7 +100,7 @@ const ProductCard = ({ item }) => {
               </span>
               <br />
               <span>
-                <b>{item.gender}</b>
+                <b style={{ textTransform:"capitalize" }}>{item.gender}</b>
               </span>
             </Typography>
           </CardContent>

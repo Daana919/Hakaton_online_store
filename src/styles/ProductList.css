@@ -1,5 +1,6 @@
 .productList_container {
   width: 100%;
+  /* max-width: 1200px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,6 +9,7 @@
 }
 .productList_container__input {
   width: 60%;
+  /* width: 100%; */
 }
 .productList_container__input input {
   margin: 0 28px;
