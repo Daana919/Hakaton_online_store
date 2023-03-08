@@ -1,4 +1,3 @@
-
 * {
 	box-sizing: border-box;
 }
@@ -33,7 +32,7 @@
 }
 
 .con {
-	background-color: #f8f8f8;
+	background-color: #aca190;
 	padding: 5px 20px 15px 20px;
 	border: 1px solid lightgrey;
 	border-radius: 3px;
@@ -73,10 +72,17 @@ label {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: white;
+	color: black;
+	border-radius: 3px;
+	text-decoration: none;
+	display: flex;
+	font-family: "Chakra Petch", sans-serif;
+	margin-bottom: 10px;
 }
 
 .btn_order:hover {
-	background: black;
+	background: #a6b997;
 	color: white;
 	border: black;
 	-webkit-transform: scale(1.1);
@@ -104,4 +110,3 @@ span.price {
 		margin-bottom: 20px;
 	}
 }
-

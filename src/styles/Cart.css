@@ -1,12 +1,30 @@
 .shopCartSection {
-    background-color: #fff;
-    font-family: "Chakra Petch", sans-serif;
-    text-transform: capitalize;
+	background-color: #fff;
+	font-family: "Chakra Petch", sans-serif;
+	text-transform: capitalize;
 }
 .cart_bg {
-    border-radius: 15px;
-    background-color: #c5b8a4 !important;
+	border-radius: 15px;
+	background-color: #c5b8a4 !important;
 }
 .btn-size {
-    width: 5px;
+	width: 5px;
+}
+
+.cartCleaner_btn {
+	background: transparent;
+	width: 30%;
+	height: 30px;
+	margin-top: 10px;
+}
+
+@media all and (max-width: 400px) {
+	.cartCleaner_btn {
+		width: 40%;
+	}
+}
+@media all and (max-width: 350px) {
+	.cartCleaner_btn {
+		width: 50%;
+	}
 }
