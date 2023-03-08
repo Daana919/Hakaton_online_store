@@ -37,6 +37,7 @@ const EditProduct = () => {
     }
   };
 
+
   return (
     <div style={{ height: "30%", fontFamily: "Chakra Petch" }} className='edit_page'>
       <h2 className="edit_title">Edit Watch Information</h2>

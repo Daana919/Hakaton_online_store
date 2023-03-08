@@ -138,6 +138,7 @@ const AddProduct = () => {
       </div>
     </div>
   );
+
 };
 
 export default AddProduct;

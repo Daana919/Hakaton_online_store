@@ -2,17 +2,17 @@
 	margin: 1%;
 	width: 45%;
 	height: 470px;
-   border-radius: 0 !important;
-   box-shadow: none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
 }
 .card_content {
 	text-align: center;
 }
 .card_content h3 {
-     font-size: 16px;
-	 text-transform: capitalize;
-	 font-family: "Chakra Petch", sans-serif;
-	 font-weight: 600;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-family: "Chakra Petch", sans-serif;
+	font-weight: 600;
 }
 .card_content span {
 	font-size: 14px;
@@ -21,17 +21,17 @@
 }
 /* Hiding the second picture right away */
 .change-photos .change-photo:nth-of-type(2) {
-  display: none;
+	display: none;
 }
 /* When you hover your cursor over the parent change-photos class, the first picture is hidden, and the second is shown */
 .change-photos:hover .change-photo:nth-of-type(1) {
-  display: none;
+	display: none;
 }
 .change-photos:hover .change-photo:nth-of-type(2) {
-  display: block;
+	display: block;
 }
 .change-photos:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 .change-photo .favorite_icon button {
 	display: flex;
@@ -42,15 +42,15 @@
 	flex-direction: column;
 	margin-top: 100%;
 }
-.card_btns  button{
+.card_btns button {
 	width: 50%;
-	background-color: #fff ;
+	background-color: #fff;
 	color: #a8741a;
 	border: 1px solid #a8741a;
-	border-radius: 0; 
+	border-radius: 0;
 	margin: 0 50px;
 	box-shadow: none;
-		font-family: "Chakra Petch", sans-serif;
+	font-family: "Chakra Petch", sans-serif;
 	font-weight: 400;
 }
 .like-cart_btns {
@@ -63,6 +63,6 @@
 	width: 100%;
 	margin-right: 90px;
 	margin-top: -30px;
-		font-family: "Chakra Petch", sans-serif;
+	font-family: "Chakra Petch", sans-serif;
 	font-weight: 400;
 }

@@ -6,7 +6,7 @@
 			"price": 11000,
 			"image": "https://shop.zenith-watches.com/media/catalog/product/0/3/03.9300.3620.78.i001.png?im=Resize=700",
 			"hoverImage": "https://shop.zenith-watches.com/media/catalog/product/0/3/03.9300.3620.78.i001_au_porter_2.png?im=Resize=1500",
-			"brand": "zenith",
+			"brand": "Zenith",
 			"gender": "men",
 			"frequency": "36,000 VpH (5 Hz)",
 			"function": "Hours and minutes in the centre. 1/10th of a second counter at 6 o'clock",
@@ -369,4 +369,3 @@
 		}
 	]
 }
-
