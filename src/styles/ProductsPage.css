@@ -28,3 +28,17 @@ font-size: 64px;
   margin-top: 5%;
   display: flex;
 }
+@media all and (max-width: 320px) {
+  .productList_header {
+  background-image: url(https://www.audemarspiguet.com/content/dam/ap/com/savoir-faire/header-4000x2000-savoir-faire.jpg.transform.aphero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
+  height: 150px;
+}
+.productList_header h2 {
+font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+}
