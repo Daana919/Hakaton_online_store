@@ -25,11 +25,11 @@ import "../../styles/Navbar.css";
 
 const pages = [
   {
-    type: "Products",
+    type: "Watches",
     path: "/products",
   },
   {
-    type: "Admin",
+    type: "Add New Watch",
     path: "/admin",
   },
 ];
