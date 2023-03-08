@@ -7,7 +7,7 @@ const FormOrderPage = () => {
 	return (
 		<div class='row'>
 			<div class='col-75'>
-				<div class='container'>
+				<div class='con'>
 					<form action='/action_page.php'>
 						<div class='row'>
 							<div class='col-50'>

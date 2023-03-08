@@ -140,13 +140,13 @@
 .thumb li:hover {
 	transform: translateY(-20px);
 }
-.thumb li img {
+/* .thumb li img {
 	width: 100px;
 }
 
 .thumb li img {
 	width: 40px;
-}
+} */
 
 .homepage {
 	background: rgb(0, 0, 0);
