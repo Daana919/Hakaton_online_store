@@ -80,6 +80,11 @@ export default function RadioButtonsGroup() {
                     control={<Radio color="default" />}
                     label="Audemars Piguet"
                   />
+                  <FormControlLabel
+                    value="tissot"
+                    control={<Radio color="default" />}
+                    label="Tissot"
+                  />
                 </RadioGroup>
               </FormControl>
             </AccordionDetails>
