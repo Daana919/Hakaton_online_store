@@ -38,7 +38,7 @@ const EditProduct = () => {
 
 	return (
 		<div style={{ height: "30%" }}>
-			<h2 className='edit_title'>Edit Watch Information</h2>
+			<h2 className='edit_title'>Edit Watch</h2>
 			{product ? (
 				<div className='edit_container'>
 					<div className='edit_block'>

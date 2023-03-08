@@ -44,8 +44,7 @@ const AddProduct = () => {
 	// console.log(setProduct);
 	return (
 		<div className='admin_panel'>
-			<div>{/* <img className='img_admin' src='https://content.rolex.com/dam/watches/family-pages/datejust/2023/a-date-with-destiny/classic-watches-datejust-a-date-with-destiny-rolesor-datejust-jubilee.jpg?imwidth=1920' alt='' /> */}</div>
-			<h2 className='admin_panel_title'>Add New Product</h2>
+			<h2 className='admin_panel_title'>Add New Watch</h2>
 			<div className='add_block'>
 				<input className='elem' type='text' placeholder='Title' name='name' onChange={handleInp} />
 				{/* <br /> */}

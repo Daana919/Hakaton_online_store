@@ -1,75 +1,79 @@
 .productList_container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .productList_container__input {
-  width: 60%;
+	width: 60%;
 }
 .productList_container__input input {
-  margin: 0 28px;
-  font-size: 28px;
-  font-family: "Chakra Petch", sans-serif;
+	margin: 0 28px;
+	font-size: 28px;
+	font-family: "Chakra Petch", sans-serif;
 }
 
 .productList_container__input svg {
-  margin: 0 28px;
+	margin: 0 28px;
 }
 
 .product-list {
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 5% 0;
-  /* background: #242424; */
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 5% 0;
+	/* background: #242424; */
 }
 .sidebar {
-  /* position: fixed; */
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f8f8f8;
-  height: 5%;
-  margin: 20px auto;
-  border-bottom: 1px solid #eff1f3;
-  line-height: 64px;
-  font-family: "Chakra Petch", sans-serif;
-
+	/* position: fixed; */
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f8f8f8;
+	height: 5%;
+	margin: 20px auto;
+	border-bottom: 1px solid #eff1f3;
+	line-height: 64px;
+	font-family: "Chakra Petch", sans-serif;
 }
 .bar_btn button {
-  margin: 0 30px;
+	margin: 0 30px;
 }
 .sidebar_btns_left {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
 }
 .sidebar_btns_left button {
-  text-transform: capitalize;
-  color:#aca190;
-  font-size: 16px;
-  font-weight: 500;
+	text-transform: capitalize;
+	color: #aca190;
+	font-size: 16px;
+	font-weight: 500;
 }
 .sidebar_btns_right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
+	width: 50%;
+	display: flex;
+	justify-content: center;
 }
 .sidebar_btns_right button {
-  text-transform: capitalize;
-    color:#a8741a;
-  font-size: 16px;
-  font-weight: 500;
-  margin-right: 15px;
+	text-transform: capitalize;
+	color: #a8741a;
+	font-size: 16px;
+	font-weight: 500;
+	margin-right: 15px;
 }
 .title_product_list {
-  display: flex;
-  justify-content: center;
-  margin-top: 8%;
+	display: flex;
+	justify-content: center;
+	margin-top: 8%;
+}
+
+@media all and (max-width: 320px) {
+	.product-list {
+		display: block;
+	}
 }

@@ -92,7 +92,7 @@ export default function Cart() {
 
 											<div className='d-flex justify-content-between mb-4'></div>
 											<hr className='my-4' />
-                      
+
 											<div className='d-flex justify-content-between mb-5'>
 												<h5 className='text-uppercase' style={{ color: "black" }}>
 													Total price: ${cart?.totalPrice}
