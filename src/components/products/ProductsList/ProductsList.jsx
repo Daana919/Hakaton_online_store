@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useProducts } from "../../../contexts/ProductContextProvider";
+import { useSearchParams } from "react-router-dom";
 import ProductCard from "../ProductCard/ProductCard";
+import "..//../../styles/ProductList.css";
 import Pagination from "@mui/material/Pagination";
 import Button from "@mui/material/Button";
-import AddIcon from "@mui/icons-material/Add";
-import "..//../../styles/ProductList.css";
 import TuneIcon from "@mui/icons-material/Tune";
 
-import { useSearchParams } from "react-router-dom";
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
 import TextField from "@mui/material/TextField";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
